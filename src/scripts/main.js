@@ -25,7 +25,7 @@ Promise.race([promise1, promise2])
   })
   .catch((errorMessage) => {
     div.classList.add('error-message');
-    div.innerHTML = errorMessage;
+    div.innerHTML = errorMessage.message;
   })
   .finally(() => {
     body.appendChild(div);
